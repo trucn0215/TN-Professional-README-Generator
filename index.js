@@ -47,7 +47,7 @@ const questions = [
     // {
     //     type: "list",
     //     message: "What is license of the application? PICK ONE OF THE LICENSE BELOW!",
-    //     choises: 
+    //     choices: 
     //         [
     //             "Apache License 2.0",
     //             "BSD 3-Clause",
@@ -74,14 +74,13 @@ const questions = [
 // function to write README file
 function writeToFile(fileName, data) {
 
+    // Call generateMarkdown.js to generate README templete literal
     const content = generateMarkdown(data);
 
+    // function to generate file
     fs.writeFile(fileName, content, (err) => 
-    // {
-    //     if (err) console.log(err)
 
-        err ? console.log(err) : console.log('README file is created!')    
-    // }
+        err ? console.log(err) : console.log('README file is created!')
     );
 }
 
@@ -89,11 +88,11 @@ function writeToFile(fileName, data) {
 function init() {
 
     inquirer
-        .prompt(questions)
+        .prompt(questions) // Promt the questions
         .then((response) => {
             console.log( response );
 
-            writeToFile("TN_README.md", response)
+            writeToFile("TN_README.md", response) // Call writeToFile function
 
             // if (response.description) {
             //     console.log("Please enter your project description!");
