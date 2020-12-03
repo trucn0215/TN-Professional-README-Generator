@@ -1,6 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const generateMarkdown = require('./utils/generateMarkdown');
+const generateMarkdown = require('./utils/generateMarkdown.js');
 
 // array of questions for user
 const questions = [
@@ -76,11 +76,13 @@ function writeToFile(fileName, data) {
 
     const content = generateMarkdown(data);
 
-    fs.writeFile(fileName, content), (err) => {
-        if (err) console.log(err)
+    fs.writeFile(fileName, content, (err) => 
+    // {
+    //     if (err) console.log(err)
 
-        // err ? console.log(err) : console.log('README file is created!')    
-    }
+        err ? console.log(err) : console.log('README file is created!')    
+    // }
+    );
 }
 
 // function to initialize program
@@ -88,10 +90,8 @@ function init() {
 
     inquirer
         .prompt(questions)
-        .then( response => {
+        .then((response) => {
             console.log( response );
-
-            // response.title;
 
             writeToFile("TN_README.md", response)
 
