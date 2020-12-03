@@ -1,6 +1,11 @@
 # TN-Professional-README-Generator
 
-## TASK
+## Table of Content
+- [Description](#Description)
+- [User Story](#User-Story)
+- [Acceptance Criteria](#Acceptance-Criteria)
+
+## Description
 With `Inquirer package`, My task is write an APP to quickly and easily create a README file by using a command-line application to generate one.
 
 ## User Story
@@ -31,8 +36,8 @@ WHEN I click on the links in the Table of Contents
 THEN I am taken to the corresponding section of the README
 ```
 
-## LINK
+## Link
 [Repo Link]()  
 [Deployed Link]()
 
-## Screenshot/Gif
+## Screenshot/Gif Demo
