@@ -17,57 +17,57 @@ const questions = [
     {
         type: "editor",
         message: "What is the User Story?",
-        name:"userStory"
+        name: "userStory"
     },
         {
         type: "editor",
         message: "What is the acceptance criteria?",
-        name:"acceptanceCriteria"
+        name: "acceptanceCriteria"
     },
     {
         type: "input",
         message: "What is your Installation instruction?",
-        name:"installation"
+        name: "installation"
     },
     {
         type: "input",
-        message: "How do you use your project?",
-        name:"usage"
+        message: "What are your Usages for your project?",
+        name: "usage"
     },
     {
         type: "list",
         message: "What is license of the application? PICK ONE OF THE LICENSE BELOW!",
         choices: 
             [
-                "Apache License 2.0",
-                "BSD 3-Clause",
-                "BSD 2-Clause",
-                "GPL",
-                "LGPL",
-                "MIT license",
-                "Mozilla Public License 2.0"
+                "Apache-2.0",
+                "BSD-3-Clause",
+                "BSD-2-Clause",
+                "gpl-license",
+                "lgpl-license",
+                "MIT",
+                "MPL-2.0"
             ],
-        name:"license"
+        name: "license"
     },
     {
         type: "input",
         message: "What is your Repo link of this Project?",
-        name:"repoLink"
+        name: "repoLink"
     },
     {
         type: "input",
         message: "What is Test instruction? PROVIDE GIF directory link",
-        name:"test"
+        name: "test"
     },
     {
         type: "input",
         message: "What is your GitHub Username?",
-        name:"github"
+        name: "github"
     },
     {
         type: "email",
         message: "What is your email address?",
-        name:"email"
+        name: "email"
     }
 ];
 
@@ -90,13 +90,8 @@ function init() {
     inquirer
         .prompt(questions) // Promt the questions
         .then((response) => {
-            // console.log( response.license );
 
             writeToFile("TN_README.md", response) // Call writeToFile function
-
-            // if (response.description) {
-            //     console.log("Please enter your project description!");
-            // }
         })
 }
 
