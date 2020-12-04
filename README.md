@@ -1,11 +1,12 @@
 # TN-Professional-README-Generator
-
+- - - -
 ## Table of Content
 - [Description](#Description)
 - [User Story](#User-Story)
 - [Acceptance Criteria](#Acceptance-Criteria)
 
 ## Description
+- - - -
 With `Inquirer package`, My task is write an APP to quickly and easily create a README file by using a command-line application to generate one.
 
 ## User Story
