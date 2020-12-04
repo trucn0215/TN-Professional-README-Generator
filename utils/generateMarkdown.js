@@ -50,7 +50,7 @@ function generateMarkdown(data) {
 
   ## Screenshot/Gif Demo
   - - - -
-  ![DEMO Gif](${data.test})
+  [Click This to watch DEMO](${data.test})
 
   ## Contact
   - - - -
