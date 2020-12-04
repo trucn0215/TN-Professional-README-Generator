@@ -56,7 +56,7 @@ const questions = [
     },
     {
         type: "input",
-        message: "What is Test instruction? PROVIDE GIF directory link",
+        message: "What is Test instruction or Demo video? PROVIDE GIF/Video link",
         name: "test"
     },
     {
