@@ -1,4 +1,4 @@
-# TN-Professional-README-Generator
+# README Generator
 - - - -
 
   ## Table of Contents
