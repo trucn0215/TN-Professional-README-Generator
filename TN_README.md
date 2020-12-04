@@ -3,7 +3,6 @@
 - - - -
 
   ## Table of Contents
-  - - - -
   - [Description](#Description)
   - [User Story](#User-Story)
   - [Accecptance Criteria](#Acceptance-Criteria)
@@ -15,20 +14,16 @@
   - [Contact](#Contact)
 
   ## Description
-  - - - -
   This project is to create an APP for User to generate a professional README file.
 
   ## User Story
-  - - - -
   ```
   AS A developer
 I WANT a README generator
 SO THAT I can quickly create a professional README for a new project
-
   ```
 
   ## Acceptance Criteria
-  - - - -
   ```
   GIVEN a command-line application that accepts user input
 WHEN I am prompted for information about my application repository
@@ -45,33 +40,26 @@ WHEN I enter my email address
 THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions
 WHEN I click on the links in the Table of Contents
 THEN I am taken to the corresponding section of the README
-
   ```
 
   ## Installation
-  - - - -
   - `npm install`
   - `npm install inquirer`
   - `node index.js`
 
   ## Usage
-  - - - -
   This project works by asking user many prompt questions as the Input information that is going to their README file. Once user answer all the prompt, App will automatically generate README file.
 
   ## License
-  - - - -
   [Apache-2.0](https://opensource.org/licenses/Apache-2.0)
 
   ## Link
-  - - - -
   [Click here for Project Repo](https://github.com/trucn0215/TN-Professional-README-Generator)
 
   ## Screenshot/Gif Demo
-  - - - -
   [Click This to watch DEMO](https://youtu.be/p8b8kjuI-eU)
 
   ## Contact
-  - - - -
   If you have any question, You can contact me using my information below
   - GitHub: [trucn0215](https://github.com/trucn0215)
   - Email: trucn0215@gmail.com
